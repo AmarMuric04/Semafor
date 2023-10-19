@@ -27,14 +27,15 @@ setInterval(() => {
   }
   if (number % 2 === 0) {
     document.body.style.backgroundColor = "yellow";
-    /*When it turns yellow, as any law abiding citizen would do, 
-    the car stops and doesnt rush to get through the inteersection before light turns red */
-    document.querySelector(".carMoves").classList.add("carMStops");
-    document.querySelector(".car-twoMoves").classList.add("carMStops");
+    /*When it turns yellow, if the light was RED before, the cars will not start moving,
+    but if the light was GREEN before, the lights will keep moving until it turns red.
+    Its unneccessary to add a class here, the animation works better without it.*/
   }
   if (number % 4 === 3) {
     document.body.style.backgroundColor = "red";
-    /* Its completely unneccessary to add a class here, 
-    since the car already gets a class telling it to stop when it turns yellow.*/
+    /*When the light turns red, the cars get a class that tells them to stop. Since they
+    dont have a brain and arent conscious beings, they will never run the red light.*/
+    document.querySelector(".carMoves").classList.add("carStops");
+    document.querySelector(".car-twoMoves").classList.add("carStops");
   }
-}, 4000);
+}, 2000);
