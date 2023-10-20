@@ -1,0 +1,67 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0vh;
+  overflow: hidden;
+}
+.car-two {
+  background-color: rgb(50, 50, 50);
+  top: 42.5%;
+}
+.car,
+.car-two {
+  width: 7vh;
+  height: 5vh;
+  position: absolute;
+  bottom: 50%;
+}
+.car {
+  background-color: white;
+  top: 54.5%;
+}
+
+.car-twoMoves {
+  animation: movecar infinite 5s ease-in;
+}
+.carMoves {
+  animation: movecar infinite 7s ease-in;
+}
+.carStops {
+  animation-play-state: paused;
+}
+.road-one {
+  background-color: gray;
+  top: 40%;
+  border-bottom: 2vh dashed white;
+}
+.road-two,
+.road-one {
+  width: 250vh;
+  height: 10vh;
+  background-color: darkgray;
+  position: absolute;
+  bottom: 50%;
+}
+.road-two {
+  top: 49.9%;
+  border-top: 2vh dashed white;
+}
+
+.headlights {
+  width: 7vh;
+  height: 5vh;
+  position: relative;
+  bottom: 2vh;
+  border-top: 2vh solid transparent;
+  border-bottom: 2vh solid transparent;
+  border-right: 4vh solid rgba(217, 255, 0, 0.2);;
+}
+
+@keyframes movecar {
+  from {
+    transform: translateX(-10vh);
+  }
+  to {
+    transform: translateX(200vh);
+  }
+}
