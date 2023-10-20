@@ -6,7 +6,7 @@ body {
 }
 .car-two {
   background-color: rgb(50, 50, 50);
-  top: 43%;
+  top: 42.5%;
 }
 .car,
 .car-two {
@@ -21,7 +21,7 @@ body {
 }
 
 .car-twoMoves {
-  animation: movecar infinite 6s ease-in;
+  animation: movecar-two /*movercar*/ infinite 5s ease-in;
 }
 .carMoves {
   animation: movecar infinite 7s ease-in;
@@ -46,6 +46,11 @@ body {
   top: 49.9%;
   border-top: 2vh dashed white;
 }
+.headlights-two{
+  border-left: 4vh solid rgba(217, 255, 0, 0.2);
+  right: 4vh;
+}
+.headlights-two,
 .headlights {
   width: 7vh;
   height: 5vh;
@@ -53,7 +58,9 @@ body {
   bottom: 2vh;
   border-top: 2vh solid transparent;
   border-bottom: 2vh solid transparent;
-  border-right: 4vh solid rgba(217, 255, 0, 0.2);
+}
+.headlights {
+  border-right: 4vh solid rgba(217, 255, 0, 0.2);;
 }
 @keyframes movecar {
   from {
@@ -61,5 +68,13 @@ body {
   }
   to {
     transform: translateX(200vh);
+  }
+}
+@keyframes movecar-two {
+  from {
+    transform: translateX(200vh);
+  }
+  to {
+    transform:translateX(-10vh)
   }
 }

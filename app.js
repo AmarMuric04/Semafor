@@ -4,7 +4,7 @@ let number = 0;
 setInterval(() => {
   number++;
   console.log(number);
-  if (number === 1 || number % 4 === 1) {
+  if (number % 4 === 1) {
     /*This is a pretty clever way of doing this,
     I did some math and realized this: 
     1.Green, 2.Yellow, 3.Red, 4.Yellow, 5.Green 
