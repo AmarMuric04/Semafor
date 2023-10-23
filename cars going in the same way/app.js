@@ -28,7 +28,7 @@ setInterval(() => {
   if (number % 2 === 0) {
     document.body.style.backgroundColor = "yellow";
     /*When it turns yellow, if the light was RED before, the cars will not start moving,
-    but if the light was GREEN before, the lights will keep moving until it turns red.
+    but if the light was GREEN before, the cars will keep moving until it turns red.
     Its unneccessary to add a class here, the animation works better without it.*/
   }
   if (number % 4 === 3) {
